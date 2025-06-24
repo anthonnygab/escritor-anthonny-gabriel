@@ -1,11 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Escritor Anthonny Gabriel</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <img src="./assets/picture/logoWriter.png" alt="escritor-logo" class="logo">
+            <ul class="url">
+                <li>
+                    <a href="">Escritor</a>
+                </li>
+                <li>
+                    <a href="">Livros</a>
+                </li>
+                <li>
+                    <a href="">Biblioteca</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bars" id="bars" style="display: none;"></i>
+                </li>
+                <li>
+                    <button class="fa-solid fa-moon" id="mode"></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="writerAbout">
+            <div class="picture">
+                <img src="./assets/picture/escritor-anthonny-gabriel.jpg" alt="" id="writer">
+            </div>
+
+            <div class="text">
+                <h1 id="aboutTitle">Sobre Mim</h1>
+                <p id="pAbout">
+                   Desde a infância, sempre tive uma forte ligação com a escrita. Ainda pequeno, criei minha primeira fanfic — uma versão de Romeu e Julieta que acabou terminando em uma tragédia... bem aterrorizante. Mesmo assim, aquilo me marcou e me mostrou como escrever podia ser algo prazeros
+                   Escrever, para mim, é como um momento de descanso da mente, uma forma de escapar do mundo real e mergulhar em universos novos. Sinto na pele as emoções e dilemas dos meus personagens — vivo cada história como se fosse parte dela.
+                   Escrever, para mim, é como um momento de descanso da mente, uma forma de escapar do mundo real e mergulhar em universos novos. Sinto na pele as emoções e dilemas dos meus personagens — vivo cada história como se fosse parte dela.
+                   Também sou fã de histórias de suspense, mistério e investigação policial — especialmente aquelas que envolvem serial killers e desafios psicológicos. Gosto de criar tramas que prendem o leitor e o fazem viver cada reviravolta intensamente.
+                   Sou Anthonny Gabriel, alguém que encontrou na escrita um refúgio e uma maneira única de contar histórias que, de alguma forma, também contam um pouco de mim. 
+                </p>
+            </div>
+        </div>
+
+        <section>
+            <h2 id="genreTitle">
+                Meus Gêneros
+                <i class="fa-solid fa-pen" id="pen"></i>
+            </h2>
+
+            <div class="genre">
+                <div class="genreCard">
+                    <i class="fa-solid fa-hat-wizard"></i>
+                    <h3>Fantasia</h3>
+                    <button class="btn-about" onclick="openPopover('fantasia')">Sobre o Gênero</button>
+                    <div class="popoverText" data-id="fantasia" role="dialog" aria-hidden="true" tabindex="-1">
+                      O gênero fantasia transporta os leitores para mundos extraordinários, onde a magia, criaturas míticas e realidades alternativas fazem parte do cotidiano. Diferente da ficção científica, que se ancora em possibilidades tecnológicas ou científicas, a fantasia permite a criação de universos completamente imaginários, regidos por suas próprias leis naturais e mágicas.
+                      Histórias de fantasia muitas vezes envolvem heróis improváveis, batalhas épicas entre o bem e o mal, reinos distantes, profecias, e jornadas de autodescoberta. Dragões, elfos, magos, feiticeiros e espadas encantadas são apenas alguns dos elementos recorrentes nesse universo rico e criativo.
+                      Esse gênero tem raízes em mitologias, lendas e contos de fadas antigos, e continua encantando gerações com obras icônicas como O Senhor dos Anéis, As Crônicas de Nárnia e Harry Potter. A fantasia não se limita apenas a livros — está presente em filmes, séries, jogos e quadrinhos, mantendo viva a capacidade humana de sonhar e imaginar.
+                </div>
+                </div>
+
+                <div class="genreCard">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <h3>Romance Policial</h3>
+                    <button class="btn-about" onclick="openPopover('police')">Sobre o Gênero</button>
+                    <div class="popoverText" data-id="police" role="dialog" aria-hidden="true" tabindex="-1">
+                       O romance policial é um gênero literário centrado em mistérios, investigações e crimes que desafiam a mente tanto dos personagens quanto dos leitores. Sua essência está na busca pela verdade: um crime é cometido — geralmente um assassinato — e cabe a um detetive, policial, jornalista ou mesmo uma pessoa comum resolver o caso, seguindo pistas e confrontando suspeitos.
+                       A narrativa geralmente envolve reviravoltas, falsas pistas e uma lógica afiada, convidando o leitor a se tornar um detetive junto ao protagonista. Muitas vezes, o suspense é construído de forma crescente até uma revelação final impactante, que amarra todos os fios da história.
+                       Ícones do gênero incluem Sherlock Holmes, Hercule Poirot e Miss Marple — personagens criados por mestres como Arthur Conan Doyle e Agatha Christie. Hoje, o romance policial continua vivo em livros, filmes, séries e até jogos, mantendo-se como um dos gêneros mais populares e instigantes da literatura moderna.
+                </div>
+                </div>
+
+                <div class="genreCard">
+                    <i class="fa-solid fa-book-bible"></i>
+                    <h3>Cristão</h3>
+                    <button class="btn-about" onclick="openPopover('cristian')">Sobre o Gênero</button>
+                    <div class="popoverText" data-id="cristian" role="dialog" aria-hidden="true" tabindex="-1">
+                       O gênero cristão na literatura vai além de histórias devocionais ou relatos religiosos — ele também pode explorar narrativas profundas sobre fé, redenção, escolhas morais e a eterna luta entre o bem e o mal. Quando mesclado com elementos de fantasia, esse gênero ganha ainda mais força simbólica e emocional.
+                       Obras cristãs com toques fantásticos muitas vezes se passam em mundos simbólicos ou apocalípticos, onde personagens enfrentam forças espirituais invisíveis, anjos, demônios, milagres e batalhas sobrenaturais. Esses elementos não apenas enriquecem a imaginação, mas também expressam verdades espirituais através de metáforas e alegorias poderosas.
+                       Nesse tipo de narrativa, o herói pode ser alguém comum que recebe um chamado divino, embarca em uma jornada espiritual ou enfrenta desafios que testam sua fé e caráter. Histórias como As Crônicas de Nárnia, de C.S. Lewis, são exemplos perfeitos dessa fusão: um universo mágico que reflete princípios cristãos profundos, como sacrifício, perdão e esperança.
+                       A fantasia, quando usada com sensibilidade dentro da literatura cristã, não diminui a mensagem — ela a amplia, tornando-a acessível e tocante para leitores de todas as idades.
+                </div>
+                </div>
+
+                <div class="genreCard">
+                     <i class="fa-solid fa-atom"></i>
+                     <h3>Ficção Científica</h3>
+                     <button class="btn-about" onclick="openPopover('secret')">Sobre o Gênero</button>
+                     <div class="popoverText" data-id="secret" role="dialog" aria-hidden="true" tabindex="-1">
+                        A ficção científica é o gênero que nos convida a imaginar o futuro, explorar os limites da ciência e refletir sobre o impacto da tecnologia na humanidade. Suas histórias frequentemente se passam em mundos alternativos, naves espaciais, planetas distantes ou até mesmo em uma Terra transformada por avanços científicos ou catástrofes globais.
+                        Mais do que robôs e lasers, a ficção científica investiga questões profundas: o que nos torna humanos? Como a inteligência artificial pode nos mudar? Estamos sozinhos no universo? Autores como Isaac Asimov, Arthur C. Clarke e Philip K. Dick usaram a imaginação científica para levantar dilemas morais, sociais e existenciais.
+                        Combinando lógica, especulação e criatividade, esse gênero cria cenários onde tecnologias imaginárias — como viagens no tempo, teletransporte ou realidades virtuais — se tornam ferramentas para contar histórias sobre escolhas humanas. E mesmo ao nos levar para o futuro, a ficção científica nos faz olhar para o presente com mais consciência.
+                        É um gênero onde ciência e imaginação caminham juntas — e onde o impossível de hoje pode ser o realismo de amanhã.
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="workBook">Minhas Obras</h2>
+            <div class="books">
+                <div class="myBooks">
+                    <img src="./assets/img/o_camponês_rei.jpg" alt="O Camponês Rei" id="oCampones">
+                    <h3 class="bookTitle">O Camponês Rei</h3>
+                    <button class="sinopseBtn" onclick="sinopse('campones')">Sinopse</button>
+                    <div class="popoverBook" data-id="campones" role="dialog" aria-hidden="true" tabindex="-1">
+                        As trevas cegarão os seus olhos e fará dele prisioneiro. Sua libertação virá através do jovem que há de assumir o trono!
+                        Um jovem se vê no dia da sua coroação como rei de uma nação, mas para isso acontecer, muitas coisas de sua vida ou ao seu redor o levaram para a posição maxima de uma nação.
+                    </div>
+                </div>
+
+                <div class="myBooks">
+                    <img src="./assets/img/as_aventuas_em_lafia_um.jpg" alt="As Aventuas em Lafia - Além do Portão Dourado" id="aventurasEmLafia">
+                    <h3 class="bookTitle">As Aventuas em Lafia - Além do Portão Dourado</h3>
+                    <button class="sinopseBtn" onclick="sinopse('portao-dourado')">Sinopse</button>
+                    <div class="popoverBook" data-id="portao-dourado" role="dialog" aria-hidden="true" tabindex="-1">
+                        Nunca acreditei quando diziam que sonhos são apenas sonhos… até encontrar o Portão Dourado. O que parecia apenas imaginação se tornou real, e agora estou preso em um reino à beira do caos. Lafia precisa de irmãos para reinar, e dizem que nossos destinos já estavam traçados. Mas como confiar em profecias quando sombras espreitam a cada passo? Eu só queria uma aventura… mas talvez tenha encontrado algo muito maior. E se eu não conseguir voltar?
+                    </div>
+                </div>
+
+                <div class="myBooks">
+                    <img src="./assets/img/as_aventuras_em_lafia_dois.jpg" alt="As Aventuas em Lafia - Perdidos em Lafia" id="perdidos">
+                    <h3 class="bookTitle">As Aventuras em Lafia - Perdidos em Lafia</h3>
+                    <button class="sinopseBtn" onclick="sinopse('perdidos')">Sinopse</button>
+                </div>
+
+                <div class="myBooks">
+                    <img src="./assets/img/o_apocalipse.jpg" alt="apocalipse" id="apocalipse">
+                    <h3 class="bookTitle">O Apocalipse</h3>
+                    <button class="sinopseBtn" onclick="sinopse('apocalipse')">Sinopse</button>
+                </div>
+
+                <div class="myBooks">
+                    <img src="./assets/img/operação_luz.jpg" alt="" id="operation">
+                    <h3 class="bookTitle">Operação Luz</h3>
+                    <button class="sinopseBtn" onclick="sinopse('operation')">Sinopse</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="shoppingStore">
+                <input type="search" name="bookSearch" id="search" placeholder="Procure por um livro...">
+
+                <div class="genreSearch">
+                    <ul class="genreCheck">
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <span>Fantasia</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <span>Romance Policial</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <span>Cristão</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <span>Ficção Científica</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shoppingBooks">
+                    <div class="livros">
+                        <img src="./assets/img/o_camponês_rei.jpg" alt="" class="livrosShopping">
+                        <h3>O Camponês Rei</h3>
+                        <button class="btn-ui">
+                            <img src="./assets/picture/uiclap_logo.png" alt="" id="logoUiclap">
+                            <h3 id="title-ui">Compre</h3>
+                        </button>
+                    </div>
+                    <div class="livros">
+                        <img src="./assets/img/as_aventuas_em_lafia_um.jpg" alt="" class="livrosShopping">
+                        <h3>As Aventuras em Lafia - Além do Portão Dourado</h3>
+                        <button class="amazonBtn">
+                            <i class="fa-brands fa-amazon"></i>
+                            <h3>Compre</h3>
+                        </button>
+                    </div>
+                    <div class="livros">
+                        <img src="./assets/img/as_aventuras_em_lafia_dois.jpg" alt="" class="livrosShopping">
+                        <h3>As Aventuras em Lafia - Perdidos em Lafia</h3>
+                        <button class="amazonBtn">
+                            <i class="fa-brands fa-amazon"></i>
+                            <h3>Compre</h3>
+                        </button>
+                    </div>
+                    <div class="livros">
+                        <img src="./assets/img/o_apocalipse.jpg" alt="" class="livrosShopping">
+                        <h3>O Apocalipse</h3>
+                        <button class="amazonBtn">
+                            <i class="fa-brands fa-amazon"></i>
+                            <h3>Compre</h3>
+                        </button>
+                    </div>
+                    <div class="livros">
+                        <img src="./assets/img/operação_luz.jpg" alt="" class="livrosShopping">
+                        <h3>Operação Luz</h3>
+                        <button class="amazonBtn">
+                            <i class="fa-brands fa-amazon"></i>
+                            <h3>Compre</h3>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carinha trsite -->
+                     <div id="sem-resultado">
+                        <i class="fas fa-frown"></i>
+                        <p>Nenhum livro encontrado</p>
+                     </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/popover.js"></script>
+    <script src="./js/bookPopover.js"></script>
+    <script defer src="./js/shoppingBook.js"></script>
 </body>
 </html>
