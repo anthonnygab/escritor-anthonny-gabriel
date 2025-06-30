@@ -153,42 +153,42 @@
                 <div class="genreSearch">
                     <ul class="genreCheck">
                         <li>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" value="fantasia">
                             <span>Fantasia</span>
                         </li>
                         <li>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" value="romance-policial">
                             <span>Romance Policial</span>
                         </li>
                         <li>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" value="cristao">
                             <span>Cristão</span>
                         </li>
                         <li>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" value="ficcao">
                             <span>Ficção Científica</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="shoppingBooks">
-                    <div class="livros">
+                    <div class="livros" data-genero="fantasia cristao">
                         <img src="./assets/img/o_camponês_rei.jpg" alt="" class="livrosShopping">
                         <h3>O Camponês Rei</h3>
-                        <button class="btn-ui">
+                        <button class="btn-ui" onclick="buyUiclap()">
                             <img src="./assets/picture/uiclap_logo.png" alt="" id="logoUiclap">
                             <h3 id="title-ui">Compre</h3>
                         </button>
                     </div>
-                    <div class="livros">
+                    <div class="livros" data-genero="fantasia cristao">
                         <img src="./assets/img/as_aventuas_em_lafia_um.jpg" alt="" class="livrosShopping">
                         <h3>As Aventuras em Lafia - Além do Portão Dourado</h3>
-                        <button class="amazonBtn">
+                        <button class="amazonBtn" id="portaoBtn">
                             <i class="fa-brands fa-amazon"></i>
                             <h3>Compre</h3>
                         </button>
                     </div>
-                    <div class="livros">
+                    <div class="livros" data-genero="fantasia cristao">
                         <img src="./assets/img/as_aventuras_em_lafia_dois.jpg" alt="" class="livrosShopping">
                         <h3>As Aventuras em Lafia - Perdidos em Lafia</h3>
                         <button class="amazonBtn">
@@ -196,7 +196,7 @@
                             <h3>Compre</h3>
                         </button>
                     </div>
-                    <div class="livros">
+                    <div class="livros" data-genero="fantasia cristao ficcao">
                         <img src="./assets/img/o_apocalipse.jpg" alt="" class="livrosShopping">
                         <h3>O Apocalipse</h3>
                         <button class="amazonBtn">
@@ -204,7 +204,7 @@
                             <h3>Compre</h3>
                         </button>
                     </div>
-                    <div class="livros">
+                    <div class="livros" data-genero="romance-policial cristao">
                         <img src="./assets/img/operação_luz.jpg" alt="" class="livrosShopping">
                         <h3>Operação Luz</h3>
                         <button class="amazonBtn">
@@ -224,6 +224,8 @@
     </main>
     <script src="./js/popover.js"></script>
     <script src="./js/bookPopover.js"></script>
+    <!--<script src="./js/checkbox.js"></script>-->
     <script defer src="./js/shoppingBook.js"></script>
+    <script src="./js/buyBooks.js"></script
 </body>
 </html>
